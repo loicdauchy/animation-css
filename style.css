@@ -1,0 +1,31 @@
+.round{
+    width: 200px;
+    height: 200px;
+    background: rgb(44, 128, 96);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: move 10s ease;
+}
+@keyframes move {
+    20%{
+        left: 100%;
+    }
+    40%{
+        left: 100%;
+        top: 100%;
+    }
+    60%{
+        left: 0%;
+        top: 100%;
+    }
+    80%{
+        left: 0%;
+        top: 0%;
+    }
+    100%{
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
+    }
+}
